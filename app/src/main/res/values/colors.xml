@@ -1,0 +1,41 @@
+<resources>
+    <color name="colorPrimary">#4F46E5</color>
+    <color name="colorPrimaryDark">#4338CA</color>
+    <color name="colorAccent">#4F46E5</color>
+    <color name="colorControlHighlight">#E0E7FF</color>
+    <color name="colorControlNormal">#64748B</color>
+    <color name="colorPrimaryContainer">#EEF2FF</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnPrimaryContainer">#312E81</color>
+    <!--Light Surfaces & Backgrounds-->
+    <color name="colorBackground">#F8FAFC</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorSurfaceVariant">#F1F5F9</color>
+    <color name="colorSurfaceBorder">#E2E8F0</color>
+    <color name="colorDivider">#E2E8F0</color>
+    <!--Typography-->
+    <color name="colorTextPrimary">#0F172A</color>
+    <color name="colorTextSecondary">#64748B</color>
+    <color name="colorTextMuted">#94A3B8</color>
+    <!--Semantic / Status Colors-->
+    <color name="colorSuccess">#10B981</color>
+    <color name="colorSuccessContainer">#ECFDF5</color>
+    <color name="colorOnSuccessContainer">#065F46</color>
+    <color name="colorWarning">#F59E0B</color>
+    <color name="colorWarningContainer">#FFFBEB</color>
+    <color name="colorOnWarningContainer">#92400E</color>
+    <color name="colorError">#EF4444</color>
+    <color name="colorErrorContainer">#FEF2F2</color>
+    <color name="colorOnErrorContainer">#991B1B</color>
+    <color name="colorInfo">#0284C7</color>
+    <color name="colorInfoContainer">#F0F9FF</color>
+    <color name="colorOnInfoContainer">#075985</color>
+    <color name="colorPurple">#8B5CF6</color>
+    <color name="colorPurpleContainer">#F5F3FF</color>
+    <color name="colorOnPurpleContainer">#5B21B6</color>
+    <color name="colorCoral">#F97316</color>
+    <color name="colorCoralContainer">#FFF7ED</color>
+    <color name="colorOnCoralContainer">#9A3412</color>
+    <!--Dialog Overlays & Scrims-->
+    <color name="dialog_scrim">#80000000</color>
+</resources>

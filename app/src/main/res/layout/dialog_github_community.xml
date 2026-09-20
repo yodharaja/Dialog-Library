@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_surface"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- GitHub Octocat Icon Container -->
+    <FrameLayout
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@drawable/bg_circle_container"
+        android:backgroundTint="@color/colorSurfaceVariant"
+        android:layout_marginBottom="16dp">
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_github"
+            android:contentDescription="GitHub Octocat" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_github_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GitHub Community &amp; Code"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:id="@+id/tv_github_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect with the creator, star this repository, and contribute custom dialogs to the community."
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Action 1: Follow on GitHub -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_github_follow"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:icon="@drawable/ic_github"
+        app:iconTint="@color/colorOnPrimary"
+        android:text="Follow on GitHub"
+        android:textStyle="bold"
+        android:backgroundTint="#0F172A"
+        android:textColor="@color/colorOnPrimary"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Action 2: View Project Repository -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_github_repo"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:icon="@drawable/ic_star"
+        app:iconTint="@color/colorPrimary"
+        android:text="Star Project on GitHub"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Action 3: Copy Project Link -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_github_copy"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:icon="@drawable/ic_copy"
+        app:iconTint="@color/colorTextSecondary"
+        android:text="Copy Repository Link"
+        android:textColor="@color/colorTextSecondary" />
+</LinearLayout>

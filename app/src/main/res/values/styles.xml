@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Base Light Application Theme -->
+	<style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="android:windowBackground">@color/colorBackground</item>
+		<item name="android:colorBackground">@color/colorBackground</item>
+		<item name="android:statusBarColor">@android:color/transparent</item>
+		<item name="android:navigationBarColor">@android:color/transparent</item>
+		<item name="android:windowLightStatusBar">true</item>
+		<item name="android:windowLightNavigationBar">true</item>
+		<item name="materialAlertDialogTheme">@style/CustomMaterialAlertDialogTheme</item>
+	</style>
+
+	<style name="AppTheme.FullScreen" parent="AppTheme">
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+	</style>
+
+	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.Material3" />
+	<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.Material3" />
+
+	<style name="AppTheme.DebugActivity" parent="AppTheme">
+		<item name="windowActionBar">true</item>
+		<item name="windowNoTitle">false</item>
+	</style>
+
+	<!-- Custom Rounded Dialog Style for MaterialAlertDialogBuilder -->
+	<style name="CustomMaterialAlertDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+		<item name="shapeAppearanceOverlay">@style/ShapeAppearance.Dialog.Rounded</item>
+		<item name="colorSurface">@color/colorSurface</item>
+		<item name="android:backgroundDimAmount">0.5</item>
+	</style>
+
+	<style name="ShapeAppearance.Dialog.Rounded" parent="">
+		<item name="cornerSize">24dp</item>
+	</style>
+
+	<!-- Bottom Sheet Dialog Theme -->
+	<style name="CustomBottomSheetDialogTheme" parent="Theme.Material3.Light.BottomSheetDialog">
+		<item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+		<item name="android:windowLightStatusBar">true</item>
+		<item name="android:windowLightNavigationBar">true</item>
+	</style>
+
+	<style name="CustomBottomSheetStyle" parent="Widget.Material3.BottomSheet">
+		<item name="shapeAppearanceOverlay">@style/ShapeAppearance.BottomSheet.Rounded</item>
+		<item name="backgroundTint">@color/colorSurface</item>
+	</style>
+
+	<style name="ShapeAppearance.BottomSheet.Rounded" parent="">
+		<item name="cornerSizeTopLeft">24dp</item>
+		<item name="cornerSizeTopRight">24dp</item>
+		<item name="cornerSizeBottomLeft">0dp</item>
+		<item name="cornerSizeBottomRight">0dp</item>
+	</style>
+
+	<!-- Dialog Window Animations (res/anim/) -->
+	<style name="DialogAnimation.Popup" parent="@android:style/Animation">
+		<item name="android:windowEnterAnimation">@anim/dialog_popup_enter</item>
+		<item name="android:windowExitAnimation">@anim/dialog_popup_exit</item>
+	</style>
+
+	<style name="DialogAnimation.Fade" parent="@android:style/Animation">
+		<item name="android:windowEnterAnimation">@anim/dialog_fade_enter</item>
+		<item name="android:windowExitAnimation">@anim/dialog_fade_exit</item>
+	</style>
+
+	<style name="DialogAnimation.SlideUp" parent="@android:style/Animation">
+		<item name="android:windowEnterAnimation">@anim/dialog_slide_up_enter</item>
+		<item name="android:windowExitAnimation">@anim/dialog_slide_up_exit</item>
+	</style>
+
+	<style name="DialogAnimation.Bounce" parent="@android:style/Animation">
+		<item name="android:windowEnterAnimation">@anim/dialog_bounce_enter</item>
+		<item name="android:windowExitAnimation">@anim/dialog_bounce_exit</item>
+	</style>
+
+	<style name="DialogAnimation.Rotate" parent="@android:style/Animation">
+		<item name="android:windowEnterAnimation">@anim/dialog_rotate_enter</item>
+		<item name="android:windowExitAnimation">@anim/dialog_rotate_exit</item>
+	</style>
+</resources>

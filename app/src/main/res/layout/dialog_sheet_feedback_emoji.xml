@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_surface"
+    android:padding="20dp"
+    android:gravity="center_horizontal">
+
+    <!-- Drag Handle -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:background="@drawable/bg_badge_rounded"
+        android:backgroundTint="@color/colorSurfaceBorder"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How was your experience?"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap an emoji to let us know how we did!"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="13sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- 4 Emoji Cards -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/emoji_amazing"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_badge_rounded"
+            android:backgroundTint="@color/colorPrimaryContainer"
+            android:gravity="center"
+            android:text="😍"
+            android:textSize="28sp"
+            android:layout_marginHorizontal="6dp" />
+
+        <TextView
+            android:id="@+id/emoji_good"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_badge_rounded"
+            android:backgroundTint="@color/colorSurfaceVariant"
+            android:gravity="center"
+            android:text="😊"
+            android:textSize="28sp"
+            android:layout_marginHorizontal="6dp" />
+
+        <TextView
+            android:id="@+id/emoji_neutral"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_badge_rounded"
+            android:backgroundTint="@color/colorSurfaceVariant"
+            android:gravity="center"
+            android:text="😐"
+            android:textSize="28sp"
+            android:layout_marginHorizontal="6dp" />
+
+        <TextView
+            android:id="@+id/emoji_bad"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_badge_rounded"
+            android:backgroundTint="@color/colorSurfaceVariant"
+            android:gravity="center"
+            android:text="😞"
+            android:textSize="28sp"
+            android:layout_marginHorizontal="6dp" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_emoji_comment"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Any suggestions for next update? (optional)"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_emoji_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="2"
+            android:gravity="top|start"
+            android:textColor="@color/colorTextPrimary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_send_emoji_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Send Feedback"
+        android:textStyle="bold"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorOnPrimary" />
+</LinearLayout>

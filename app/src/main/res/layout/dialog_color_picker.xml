@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_surface"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Color Accent"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tv_selected_hex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected: #4F46E5"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="13sp"
+        android:layout_marginBottom="18dp" />
+
+    <!-- Color Grid Row 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
+
+        <View
+            android:id="@+id/color_1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_circle_container"
+            android:backgroundTint="#4F46E5"
+            android:layout_marginHorizontal="8dp" />
+        <View
+            android:id="@+id/color_2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_circle_container"
+            android:backgroundTint="#10B981"
+            android:layout_marginHorizontal="8dp" />
+        <View
+            android:id="@+id/color_3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_circle_container"
+            android:backgroundTint="#F59E0B"
+            android:layout_marginHorizontal="8dp" />
+        <View
+            android:id="@+id/color_4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_circle_container"
+            android:backgroundTint="#EF4444"
+            android:layout_marginHorizontal="8dp" />
+    </LinearLayout>
+
+    <!-- Color Grid Row 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <View
+            android:id="@+id/color_5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_circle_container"
+            android:backgroundTint="#0284C7"
+            android:layout_marginHorizontal="8dp" />
+        <View
+            android:id="@+id/color_6"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_circle_container"
+            android:backgroundTint="#8B5CF6"
+            android:layout_marginHorizontal="8dp" />
+        <View
+            android:id="@+id/color_7"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_circle_container"
+            android:backgroundTint="#EC4899"
+            android:layout_marginHorizontal="8dp" />
+        <View
+            android:id="@+id/color_8"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_circle_container"
+            android:backgroundTint="#0F172A"
+            android:layout_marginHorizontal="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dialog_btn_cancel"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_marginEnd="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dialog_btn_select"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Apply Color"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorOnPrimary" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,367 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<androidx.coordinatorlayout.widget.CoordinatorLayout
+		android:id="@+id/coordinator"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorBackground">>
+		<com.google.android.material.appbar.AppBarLayout
+			android:id="@+id/app_bar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorSurface"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/layout_collapsible_header"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="20dp"
+				android:paddingTop="20dp"
+				android:paddingRight="20dp"
+				android:paddingBottom="4dp"
+				android:orientation="vertical"
+				app:layout_scrollFlags="scroll">
+				<LinearLayout
+					android:id="@+id/linear2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview1"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="@string/app_name"
+						android:textSize="24sp"
+						android:textStyle="bold"
+						android:textColor="@color/colorTextPrimary"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvTotalCountBadge"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:paddingLeft="10dp"
+						android:paddingTop="4dp"
+						android:paddingRight="10dp"
+						android:paddingBottom="4dp"
+						android:text="56 dialogs"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="@color/colorPrimary"
+						android:backgroundTint="@color/colorPrimaryContainer" />
+				</LinearLayout>
+				<TextView
+					android:id="@+id/textview2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="8dp"
+					android:layout_marginBottom="14dp"
+					android:text="Modular, plug-and-play dialogs for Sketchware"
+					android:textSize="13sp"
+					android:textColor="@color/colorTextSecondary" />
+				<LinearLayout
+					android:id="@+id/cardGithubSection"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="12dp"
+					android:padding="14dp"
+					android:orientation="vertical"
+					android:background="@drawable/bg_github_card">
+					<LinearLayout
+						android:id="@+id/linear3"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="5dp"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+						<FrameLayout
+							android:id="@+id/frame1"
+							android:layout_width="38dp"
+							android:layout_height="38dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:background="@drawable/bg_badge_rounded"
+							android:backgroundTint="@color/colorSurfaceVariant"
+							android:layout_marginEnd="10dp"
+							>
+							<ImageView
+								android:id="@+id/imageview1"
+								android:layout_width="22dp"
+								android:layout_height="22dp"
+								android:src="@drawable/ic_github"
+								android:scaleType="center"
+								android:layout_gravity="center_horizontal|center_vertical" />
+						</FrameLayout>
+						<LinearLayout
+							android:id="@+id/linear5"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:orientation="vertical"
+							android:layout_weight="1">
+							<TextView
+								android:id="@+id/textview3"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="GitHub Community &amp; Source"
+								android:textSize="14sp"
+								android:textStyle="bold"
+								android:textColor="@color/colorTextPrimary" />
+							<TextView
+								android:id="@+id/textview4"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Follow on GitHub &amp; Star this project"
+								android:textSize="12sp"
+								android:textColor="@color/colorTextSecondary" />
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear4"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="5dp"
+						android:orientation="horizontal">
+						<com.google.android.material.button.MaterialButton
+							android:id="@+id/btnHomeGithubFollow"
+							android:layout_width="0dp"
+							android:layout_height="42dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="Follow"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:textColor="@color/colorOnPrimary"
+							android:layout_weight="1"
+							app:icon="@drawable/ic_github"
+							app:iconSize="16dp"
+							app:iconTint="@color/colorOnPrimary"
+							android:backgroundTint="#0F172A"
+							android:layout_marginEnd="8dp" />
+						<com.google.android.material.button.MaterialButton
+							android:id="@+id/btnHomeGithubRepo"
+							android:layout_width="0dp"
+							android:layout_height="42dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="Star Repo"
+							android:textSize="12sp"
+							android:textStyle="bold"
+							android:layout_weight="1"
+							style="@style/Widget.Material3.Button.OutlinedButton"
+							app:icon="@drawable/ic_star"
+							app:iconSize="16dp"
+							app:iconTint="@color/colorPrimary"
+							android:textColor="@color/colorPrimary"
+							android:layout_marginEnd="8dp" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="20dp"
+				android:paddingTop="6dp"
+				android:paddingRight="20dp"
+				android:paddingBottom="12dp"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear6"
+					android:layout_width="match_parent"
+					android:layout_height="48dp"
+					android:layout_marginBottom="12dp"
+					android:paddingLeft="12dp"
+					android:paddingRight="12dp"
+					android:gravity="center_vertical"
+					android:orientation="horizontal"
+					android:background="@drawable/bg_search_bar">
+					<ImageView
+						android:id="@+id/imageview2"
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:src="@drawable/ic_search"
+						android:scaleType="center"
+						android:layout_marginEnd="10dp" />
+					<EditText
+						android:id="@+id/etSearch"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:textSize="14sp"
+						android:textColor="@color/colorTextPrimary"
+						android:hint="Search dialogs (e.g. sheet, otp, alert)..."
+						android:textColorHint="@color/colorTextMuted"
+						android:singleLine="true"
+						android:imeOptions="actionSearch"
+						android:layout_weight="1"
+						android:background="@null" />
+					<ImageView
+						android:id="@+id/btnClearSearch"
+						android:layout_width="24dp"
+						android:layout_height="24dp"
+						android:src="@drawable/ic_clear"
+						android:scaleType="center"
+						android:visibility="gone" />
+				</LinearLayout>
+				<HorizontalScrollView
+					android:id="@+id/hscroll1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:scrollbars="none"
+					android:overScrollMode="never">
+					<com.google.android.material.chip.ChipGroup
+						android:id="@+id/chipGroupCategories"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center_vertical"
+						app:singleSelection="true"
+						app:selectionRequired="true">>
+						<com.google.android.material.chip.Chip
+							android:id="@+id/chip_all"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							style="@style/Widget.Material3.Chip.Filter"
+							android:text="All"
+							android:checked="true" />
+						<com.google.android.material.chip.Chip
+							android:id="@+id/chip_sheets"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							style="@style/Widget.Material3.Chip.Filter"
+							android:text="BottomSheets" />
+						<com.google.android.material.chip.Chip
+							android:id="@+id/chip_wizards"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							style="@style/Widget.Material3.Chip.Filter"
+							android:text="Wizards&amp;OTP" />
+						<com.google.android.material.chip.Chip
+							android:id="@+id/chip_animations"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							style="@style/Widget.Material3.Chip.Filter"
+							android:text="Animations" />
+						<com.google.android.material.chip.Chip
+							android:id="@+id/chip_sweet"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							style="@style/Widget.Material3.Chip.Filter"
+							android:text="SweetAlerts" />
+						<com.google.android.material.chip.Chip
+							android:id="@+id/chip_material"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							style="@style/Widget.Material3.Chip.Filter"
+							android:text="Material3" />
+						<com.google.android.material.chip.Chip
+							android:id="@+id/chip_inputs"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							style="@style/Widget.Material3.Chip.Filter"
+							android:text="Input&amp;Forms" />
+						<com.google.android.material.chip.Chip
+							android:id="@+id/chip_progress"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							style="@style/Widget.Material3.Chip.Filter"
+							android:text="Progress&amp;Loaders" />
+						<com.google.android.material.chip.Chip
+							android:id="@+id/chip_custom"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="5dp"
+							style="@style/Widget.Material3.Chip.Filter"
+							android:text="Pickers&amp;Custom" />
+						<com.google.android.material.button.MaterialButton
+							android:id="@+id/materialbutton1"
+							android:layout_width="150dp"
+							android:layout_height="42dp"
+							android:layout_marginLeft="5dp"
+							android:layout_marginTop="7dp"
+							android:layout_marginRight="10dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="Best Five"
+							android:textSize="13sp"
+							android:textColor="@color/colorTextSecondary"
+							android:layout_gravity="center_horizontal|center_vertical"
+							style="@style/Widget.Material3.Button.OutlinedButton"
+							app:icon="@drawable/ic_code"
+							app:iconSize="16dp"
+							app:iconTint="@color/colorPrimary" />
+					</com.google.android.material.chip.ChipGroup>
+				</HorizontalScrollView>
+			</LinearLayout>
+			<View
+				android:id="@+id/gap1"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:orientation="horizontal"
+				android:background="@color/colorSurfaceBorder" />
+		</com.google.android.material.appbar.AppBarLayout>
+		<FrameLayout
+			android:id="@+id/frame2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior">
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recyclerDialogs"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:paddingLeft="16dp"
+				android:paddingTop="12dp"
+				android:paddingRight="16dp"
+				android:paddingBottom="24dp"
+				android:clipToPadding="false"
+				tools:listitem="@layout/item_dialog_card" />
+			<LinearLayout
+				android:id="@+id/layoutEmptyState"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="32dp"
+				android:gravity="center_horizontal"
+				android:orientation="vertical"
+				android:visibility="gone">
+				<ImageView
+					android:id="@+id/imageview4"
+					android:layout_width="64dp"
+					android:layout_height="64dp"
+					android:layout_marginTop="1dp"
+					android:layout_marginBottom="16dp"
+					android:src="@drawable/ic_search"
+					android:scaleType="center" />
+				<TextView
+					android:id="@+id/textview5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="6dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="No Dialogs Found"
+					android:textSize="18sp"
+					android:textStyle="bold"
+					android:textColor="@color/colorTextPrimary" />
+				<TextView
+					android:id="@+id/textview6"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="20dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="Try searching for a different keyword or category."
+					android:textSize="13sp"
+					android:textColor="@color/colorTextSecondary" />
+				<com.google.android.material.button.MaterialButton
+					android:id="@+id/btnResetSearch"
+					android:layout_width="wrap_content"
+					android:layout_height="48dp"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="Clear Search"
+					android:textSize="12sp"
+					android:textColor="@color/colorPrimary"
+					style="@style/Widget.Material3.Button.OutlinedButton" />
+			</LinearLayout>
+		</FrameLayout>
+	</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

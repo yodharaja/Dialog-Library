@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_surface"
+    android:padding="24dp">
+
+    <!-- Top Indicator: Step Counter & Dots -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tv_wizard_step_indicator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Step 1 of 3"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <!-- Step Dots Container -->
+        <LinearLayout
+            android:id="@+id/layout_wizard_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <View
+                android:id="@+id/dot_step_1"
+                android:layout_width="20dp"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_badge_rounded"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginEnd="6dp" />
+
+            <View
+                android:id="@+id/dot_step_2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_badge_rounded"
+                android:backgroundTint="@color/colorSurfaceBorder"
+                android:layout_marginEnd="6dp" />
+
+            <View
+                android:id="@+id/dot_step_3"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_badge_rounded"
+                android:backgroundTint="@color/colorSurfaceBorder" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Center Icon & Illustration -->
+    <FrameLayout
+        android:id="@+id/wizard_icon_container"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@drawable/bg_badge_rounded"
+        android:backgroundTint="@color/colorPrimaryContainer"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp">
+        <ImageView
+            android:id="@+id/iv_wizard_icon"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_sparkle"
+            android:contentDescription="Step Icon" />
+    </FrameLayout>
+
+    <!-- Step Title -->
+    <TextView
+        android:id="@+id/tv_wizard_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Dialogs Pro"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Step Description -->
+    <TextView
+        android:id="@+id/tv_wizard_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explore 34+ production-ready dialogs with full source code for Sketchware and Android Studio."
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginBottom="28dp" />
+
+    <!-- Navigation Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_wizard_back"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:text="Back"
+            android:textColor="@color/colorTextSecondary"
+            android:visibility="invisible"
+            android:layout_marginEnd="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_wizard_next"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:text="Next"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorOnPrimary" />
+    </LinearLayout>
+</LinearLayout>

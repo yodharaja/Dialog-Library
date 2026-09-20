@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Soft Drop Shadow for 3D Elevation -->
+    <path
+        android:fillColor="#25000000"
+        android:pathData="M36.5,30 h20 c14,0 25,11 25,25 c0,14 -11,25 -25,25 h-12 c-2,0 -4,1.5 -5,3 L29.5,88 c-1.5,1.2 -3.5,0.2 -3.5,-1.8 L28,78 c-2,-2 -3.5,-4.5 -3.5,-7.5 v-32 c0,-5 4,-9 9,-9 z" />
+
+    <!-- Stylized "D" Dialog Bubble (Crisp White) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M36.5,27 h20 c14,0 25,11 25,25 c0,14 -11,25 -25,25 h-12 c-2,0 -4,1.5 -5,3 L29.5,85 c-1.5,1.2 -3.5,0.2 -3.5,-1.8 L28,75 c-2,-2 -3.5,-4.5 -3.5,-7.5 v-32 c0,-5 4,-9 9,-9 z" />
+
+    <!-- Inner Counter Cutout (Matching Background Indigo) -->
+    <path
+        android:fillColor="#4338CA"
+        android:pathData="M39.5,39 h14 c7.5,0 13.5,6 13.5,13.5 c0,7.5 -6,13.5 -13.5,13.5 h-14 c-1.5,0 -2.5,-1 -2.5,-2.5 v-22 c0,-1.5 1,-2.5 2.5,-2.5 z" />
+
+    <!-- Code Symbol Inside the "D" Counter -->
+    <!-- Left Bracket < -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M46.5,49 L42.5,52.5 L46.5,56" />
+
+    <!-- Code Slash / -->
+    <path
+        android:strokeColor="#818CF8"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:pathData="M53.5,46 L49.5,59" />
+
+    <!-- Right Bracket > -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M54.5,49 L58.5,52.5 L54.5,56" />
+
+    <!-- Ambient Sparkle (Golden Accent) -->
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M80,21 C80,23 81.5,24.5 83.5,24.5 C81.5,24.5 80,26 80,28 C80,26 78.5,24.5 76.5,24.5 C78.5,24.5 80,23 80,21 Z" />
+
+</vector>

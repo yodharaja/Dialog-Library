@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_surface"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_language"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="Language" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Language"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/language_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/radio_en"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="English (US)"
+            android:textColor="@color/colorTextPrimary"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radio_es"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Español (Spanish)"
+            android:textColor="@color/colorTextPrimary" />
+
+        <RadioButton
+            android:id="@+id/radio_fr"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Français (French)"
+            android:textColor="@color/colorTextPrimary" />
+
+        <RadioButton
+            android:id="@+id/radio_hi"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="हिन्दी (Hindi)"
+            android:textColor="@color/colorTextPrimary" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dialog_btn_cancel"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_marginEnd="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dialog_btn_apply"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Apply"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorOnPrimary" />
+    </LinearLayout>
+</LinearLayout>

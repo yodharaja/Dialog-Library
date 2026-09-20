@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_surface"
+    android:padding="24dp">
+
+    <!-- Top Indicator: Step Counter & Animated Dots -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tv_acc_step_indicator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Step 1 of 3: User Role"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <!-- Animated Step Dots Container -->
+        <LinearLayout
+            android:id="@+id/layout_acc_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <View
+                android:id="@+id/dot_acc_1"
+                android:layout_width="22dp"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_badge_rounded"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginEnd="6dp" />
+
+            <View
+                android:id="@+id/dot_acc_2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_badge_rounded"
+                android:backgroundTint="@color/colorSurfaceBorder"
+                android:layout_marginEnd="6dp" />
+
+            <View
+                android:id="@+id/dot_acc_3"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_badge_rounded"
+                android:backgroundTint="@color/colorSurfaceBorder" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Center Icon & Illustration -->
+    <FrameLayout
+        android:id="@+id/acc_icon_container"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@drawable/bg_badge_rounded"
+        android:backgroundTint="@color/colorPrimaryContainer"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp">
+        <ImageView
+            android:id="@+id/iv_acc_icon"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_person"
+            android:contentDescription="Profile Icon" />
+    </FrameLayout>
+
+    <!-- Step Title -->
+    <TextView
+        android:id="@+id/tv_acc_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Primary Role"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Step Description -->
+    <TextView
+        android:id="@+id/tv_acc_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Personalize your dialog showcase workspace by selecting how you build mobile apps."
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Navigation Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_acc_back"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Back"
+            app:icon="@drawable/ic_arrow_back"
+            app:iconSize="16dp"
+            android:textColor="@color/colorTextSecondary"
+            android:visibility="invisible"
+            android:layout_marginEnd="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_acc_next"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Next"
+            android:textStyle="bold"
+            app:icon="@drawable/ic_arrow_forward"
+            app:iconGravity="end"
+            app:iconSize="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorOnPrimary" />
+    </LinearLayout>
+</LinearLayout>

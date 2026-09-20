@@ -1,0 +1,117 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/base"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="12dp"
+		android:padding="16dp"
+		android:orientation="vertical"
+		android:background="@drawable/bg_dialog_card">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="12dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<FrameLayout
+				android:id="@+id/card_icon_container"
+				android:layout_width="44dp"
+				android:layout_height="44dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:background="@drawable/bg_badge_rounded"
+				android:backgroundTint="@color/colorPrimaryContainer"
+				android:layout_marginEnd="12dp">
+				<ImageView
+					android:id="@+id/card_icon"
+					android:focusable="false"
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:src="@drawable/ic_check_circle"
+					android:scaleType="fitCenter"
+					android:layout_gravity="center_horizontal|center_vertical" />
+			</FrameLayout>
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<TextView
+					android:id="@+id/card_category"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="4dp"
+					android:paddingLeft="10dp"
+					android:paddingTop="3dp"
+					android:paddingRight="10dp"
+					android:paddingBottom="3dp"
+					android:text="SweetAlert"
+					android:textSize="11sp"
+					android:textStyle="bold"
+					android:textColor="@color/colorPrimary"
+					android:background="@drawable/bg_badge_rounded"
+					android:backgroundTint="@color/colorSurfaceVariant" />
+				<TextView
+					android:id="@+id/card_title"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Success Alert"
+					android:textSize="17sp"
+					android:textStyle="bold"
+					android:textColor="@color/colorTextPrimary" />
+			</LinearLayout>
+		</LinearLayout>
+		<TextView
+			android:id="@+id/card_description"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp"
+			android:text="TextView"
+			android:textSize="13sp"
+			android:textColor="@color/colorTextSecondary"
+			android:lineSpacingMultiplier="1.2" />
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<com.google.android.material.button.MaterialButton
+				android:id="@+id/card_btn_code"
+				android:layout_width="0dp"
+				android:layout_height="44dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="Code    "
+				android:textSize="14sp"
+				android:textColor="@color/colorPrimary"
+				android:layout_weight="1"
+				app:icon="@drawable/ic_code"
+				app:iconSize="18dp"
+				app:iconTint="@color/colorPrimary"
+				android:layout_marginEnd="8dp"
+				style="@style/Widget.Material3.Button.OutlinedButton" />
+			<com.google.android.material.button.MaterialButton
+				android:id="@+id/card_btn_launch"
+				android:layout_width="0dp"
+				android:layout_height="44dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="Show     "
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:textColor="@color/colorOnPrimary"
+				android:layout_weight="1"
+				app:icon="@drawable/ic_play"
+				app:iconSize="18dp"
+				android:backgroundTint="@color/colorPrimary" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
