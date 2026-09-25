@@ -53,23 +53,23 @@ Follow these steps to integrate any of the 56+ dialogs into your Sketchware Pro 
    package com.my.app;
    ```
 
-#### Step 3: Add the XML Layout
+#### Step 2: Add the XML Layout
 1. Tap the Three Dots (⋮) -> **Resource Manager** ( place XML into `res/layout/`).
 2. Create or paste the corresponding XML file (e.g. `dialog_sweet_success.xml`).
 3. *(Note: For Material 3 native dialogs such as `MaterialBasicDialog.java`, no custom XML layout is needed!)*
 
-#### Step 4: Add Required Drawables
+#### Step 3: Add Required Drawables
 1. Tap the Three Dots (⋮) -> **Resource Manager** ( place vector XMLs into `res/drawable/`).
 2. Add the reusable drawables referenced by the dialog:
    - `bg_dialog_surface.xml` (Card container with 24dp rounded corners)
    - `bg_badge_rounded.xml` (Pill/icon container)
    - The specific icon (e.g. `ic_check_circle.xml`, `ic_lock.xml`, `ic_trophy.xml`, etc.)
 
-#### Step 5: Enable AppCompat & Material Components
+#### Step 4: Enable AppCompat & Material Components
 1. Tap the Three Dots (⋮) -> **Library Manager**.
 2. Toggle ON **AppCompat and Design / Material3 Manager**.
 
-#### Step 6: Trigger the Dialog with an "Add Source Directly" Block
+#### Step 5: Trigger the Dialog with an "Add Source Directly" Block
 1. Open any Event logic (e.g., `button1 onClick`, `onItemClicked`, or `onCreate`).
 2. Drag and drop an **`add source directly`** code block into your event.
 3. Paste the one-line invocation code:
