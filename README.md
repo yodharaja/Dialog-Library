@@ -47,7 +47,7 @@ Follow these steps to integrate any of the 56+ dialogs into your Sketchware Pro 
 5. ⚠️ **Match Your Package Name**: Change the very first line of the Java file to match your Sketchware package:
    ```java
    // Change from:
-   package com.sketchware.dialogshowcase.dialogs;
+   package com.dialogshowcase.dialogs;
 
    // To your actual project package:
    package com.my.app;
