@@ -1,7 +1,9 @@
 
-
-# Dialog Library - Modern Android Dialogs
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/yodharaja/Dialog-Library/main/app/src/main/assets/icon.png" width="30%" alt="App Icon" />
+  
+  # Dialog Library - Modern Android Dialogs
+</p>
 <p align="center">
   <img src="https://img.shields.io/badge/Android_Studio-IDE-3DDC84?labelColor=0D1117&logo=androidstudio&logoColor=white" alt="Android Studio" />
   <img src="https://img.shields.io/badge/Sketchware-Pro-FF6F00?labelColor=0D1117&logo=android&logoColor=white" alt="Sketchware Pro" />
