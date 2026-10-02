@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/yodharaja/Dialog-Library/main/app/src/main/assets/icon.png" width="30%" alt="App Icon" />
+  <img src="https://raw.githubusercontent.com/yodharaja/Dialog-Library/main/app/src/main/assets/icon.png" width="50%" alt="App Icon" />
   
   # Dialog Library - Modern Android Dialogs
 </p>
